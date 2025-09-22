@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="js/dialog.js"></script>
+    <script src="js/burger_menu.js"></script>
     <title>Urgent Mindset</title>
 </head>
+
 <body>
     <header>
-        <img src="img/Primary.png" class="logo"/>
-        <nav>
+        <img src="img/Primary.png" class="logo" />
+        <span id="burger-menu">&#9776;</span>
+        <nav id="main-nav">
             <ul>
                 <li>About Us</li>
                 <li>Our Services</li>
@@ -20,33 +28,55 @@
     <div class="main-body">
         <section class="text-section">
             <h1>Where Urgency Meets <span class="green">Intelligence.</span></h1>
-            <p>Whether you're navigating change, scaling operations, or solving critical challenges, we partner with you to move forward fast and with purpose</p>
+            <p>Whether you're navigating change, scaling operations, or solving critical challenges, we partner with you
+                to move forward fast and with purpose</p>
             <a href="#" class="service-link">Explore Our Services</a>
+            <button  id="book-call">Book a Call</button>
         </section>
         <section class="img-section">
             <div class="complex-img">
-                <img src ="img/home-img.jpg"/>
+                <img src="img/home-img.jpg" />
             </div>
         </section>
     </div>
     <div class="about-us">
         <section class="img-section">
             <div class="complex-img">
-                <img src ="img/company-personnel-coming-together-to-honor-a-well-2025-02-20-01-59-44-utc.jpg"/>
+                <img src="img/company-personnel-coming-together-to-honor-a-well-2025-02-20-01-59-44-utc.jpg" />
             </div>
         </section>
         <section class="text-section">
-            <h1>About Us</h1>
+            <h1>About <span class="green">Us</span></h1>
             <p>At Urgent Mindset, our mission is to equip organizations
-and leaders with the mindset, tools, and strategies to act
-with urgency and precision. We merge expertise and
-execution to help clients navigate change, optimize
-operations, and achieve meaningful results. Through
-partnership, insight, and intentional action, we empower
-teams to think smarter, move faster, and build lasting
-success.</p>
+                and leaders with the mindset, tools, and strategies to act
+                with urgency and precision. We merge expertise and
+                execution to help clients navigate change, optimize
+                operations, and achieve meaningful results. Through
+                partnership, insight, and intentional action, we empower
+                teams to think smarter, move faster, and build lasting
+                success.</p>
         </section>
-        
+
+    </div>
+    <div id="dialog-form" title="Book a Call">
+        <p class="validateTips">All form fields are required.</p>
+        <form>
+            <fieldset>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" 
+                    class="text ui-widget-content ui-corner-all"><br>
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" 
+                    class="text ui-widget-content ui-corner-all"><br>
+                <label for="phone">Phone</label>
+                <input type="phone" name="phone" id="phone" 
+                    class="text ui-widget-content ui-corner-all"><br>
+
+                <!-- Allow form submission with keyboard without duplicating the dialog button -->
+                <input type="submit" tabindex="-1" style="position:absolute; top:-1000px">
+            </fieldset>
+        </form>
     </div>
 </body>
+
 </html>

@@ -23,8 +23,9 @@ clip-path: shape(
     --surgeon-green: #00a36c;
     --honeydew: #f0fff0;
     color: var(--night-dive);
-    z-index: 1;
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 body{
     background-color: var(--honeydew);
@@ -35,27 +36,58 @@ header, ul, .main-body, .about-us{
 
 header{
     justify-content: space-between;
-    padding: 10px 50px 0px;
+    position: relative;
+    padding-top: 10px;
+}
+#burger-menu {
+    display: block;
+    font-size: 3rem;
+    padding: 0px 10px;
+
+}
+
+#burger-menu.open{
+    background-color: var(--night-dive);
+    color: var(--honeydew);
 }
 
 nav{
-    width: 500px;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 74px;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    transition: all 1s;
+}
+
+nav.open{
+    display: block;
 }
 
 .logo {
     height: 60px;
 }
 
-ul{
+nav ul{
     list-style: none;
     justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--night-dive);
+    height: 165px;
 }
-
-.main-body{
+nav ul li {
+    color: var(--honeydew);
+    padding: 15px
+}
+nav ul li:hover {
+    background-color: #16628b;
+}
+.main-body, .about-us{
     justify-content: space-between;
-    padding: 50px 50px;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+
 }
 .green{
     color: var(--lightish-green);
@@ -70,7 +102,7 @@ p {
 }
  .complex-img{
     flex: 1;
-    margin-left: 50px;
+
     max-width: 800px;
     min-width: 350px;
     aspect-ratio: 2.498;
@@ -123,10 +155,12 @@ p {
     flex-direction: column;
     max-width: 800px;
     min-width: 350px;
+    order: 2;
 
 }
 .text-section{
     flex: 1;
+    min-width: 350px;
 }
 
 /* <div class="shape"> OR <img class="shape"> */
@@ -148,14 +182,59 @@ p {
     border-radius: 50%;
 } */
 
-.service-link{
+.service-link, #book-call{
     text-decoration: none;
     background-color: var(--lightish-green);
     color: white;
     padding: 12px;
     border-radius: 5px;
+    border-width: 0px;
 }
 
-.service-link:hover{
+.service-link:hover, #book-call:hover{
     background-color:#a2e2a5;
+}
+
+@media screen and ((min-width: 700px)) {
+    *{
+        margin: 10px 0px;
+    }
+    
+    .img-section{
+        order: 0;
+    }
+    header{
+        padding: 0px;
+    }
+    #burger-menu{
+        display: none;
+    }
+    nav{
+        display: block;
+        position: static;
+        min-width: 30%;
+        max-width: 500px;
+    }
+
+    nav ul{
+        list-style: none;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: inherit;
+        height: 100%;
+    }
+
+    nav ul li {
+        color: inherit;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        border-radius: 5px;
+    }
+
+    nav ul li:hover {
+        background-color: #c9e4c9
+    }
 }
