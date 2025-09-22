@@ -24,7 +24,7 @@ clip-path: shape(
     --honeydew: #f0fff0;
     color: var(--night-dive);
     box-sizing: border-box;
-    margin: 0px;
+    margin: 10px 0px;
     padding: 0px;
 }
 body{
@@ -38,11 +38,18 @@ header{
     justify-content: space-between;
     position: relative;
     padding-top: 10px;
+    margin: 0px;
 }
+
+header * {
+    margin: 0px;
+}
+
 #burger-menu {
     display: block;
     font-size: 3rem;
     padding: 0px 10px;
+    cursor: pointer;
 
 }
 
@@ -105,7 +112,7 @@ p {
 
     max-width: 800px;
     min-width: 350px;
-    aspect-ratio: 2.498;
+    aspect-ratio: 2;
 	clip-path: shape(
         from 100% 99.95%,
         hline to 98.95%,
