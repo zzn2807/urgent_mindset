@@ -27,10 +27,14 @@ clip-path: shape(
     margin: 10px 0px;
     padding: 0px;
 }
+
+html,body {
+    margin-bottom: 0;
+}
 body{
     background-color: var(--honeydew);
 }
-header, ul, .main-body, .about-us{
+header, ul, .main-body, .about-us, .footer{
     display: flex;
 }
 
@@ -69,11 +73,29 @@ nav{
     transition: all 1s;
 }
 
+.footer{
+    background-color: var(--night-dive);
+    margin-bottom: 0;
+    justify-content: space-between;
+    
+}
+.footer * {
+    color: var(--honeydew);
+}
+
+.footer span{
+    display: flex;
+    align-items: center;
+}
+
+.footer .logo{
+    height: 20px;
+}
 nav.open{
     display: block;
 }
 
-.logo {
+.logo{
     height: 60px;
 }
 
