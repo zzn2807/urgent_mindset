@@ -86,7 +86,7 @@ $(function () {
     // addUser();
   });
 
-  $("#book-call").button().on("click", function () {
+  $(".book-call").on("click", function () {
     dialog.dialog("open");
   });
 });
