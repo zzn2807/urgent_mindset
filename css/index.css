@@ -42,7 +42,7 @@ header{
     justify-content: space-between;
     position: relative;
     padding-top: 10px;
-    margin: 0px;
+    margin: 0px 15px;
 }
 
 header * {
@@ -187,9 +187,14 @@ p {
     order: 2;
 
 }
+
+.main-body, .about-us{
+    margin: 0px 15px;
+}
+
 .text-section{
     flex: 1;
-    min-width: 350px;
+    min-width: 320px;
 }
 
 /* <div class="shape"> OR <img class="shape"> */
