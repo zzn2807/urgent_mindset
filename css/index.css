@@ -77,7 +77,7 @@ html,body {
 body{
     background-color: var(--honeydew);
 }
-header, ul, .main-body, .about-us, .footer{
+header, ul, .main-body, .about-us, .footer, .service-cards{
     display: flex;
 }
 
@@ -246,6 +246,22 @@ p {
 
 .service-link:hover, #book-call:hover{
     background-color:#a2e2a5;
+}
+
+.service-cards{
+    flex-wrap: wrap;
+}
+
+.service-card{
+    min-width: 350px;
+    flex: 1;
+    flex-basis: 30%;
+    text-align: center;
+    background-color: #c9e4c9;
+    margin: 0px 20px 20px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px;
 }
 
 @media screen and ((min-width: 700px)) {
