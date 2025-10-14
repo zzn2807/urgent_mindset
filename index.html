@@ -14,13 +14,13 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <img src="img/Primary.png" class="logo" />
         <span id="burger-menu">&#9776;</span>
         <nav id="main-nav">
             <ul>
-                <li>About Us</li>
-                <li>Our Services</li>
+                <a href = "#about-us"><li>About Us</li></a>
+                <a href = "#services"><li>Our Services</li></a>
                 <li class="book-call">Book a Call</li>
             </ul>
         </nav>
@@ -34,7 +34,7 @@
 intersection of <span class="green">expertise and execution.</span> Our name reflects our approach: we move with 
 <span class="green">intention, urgency, and precision</span> to solve critical challenges, streamline systems, and 
 improve outcomes for providers, programs, and the people they serve. </p>
-            <a href="#" class="service-link">Explore Our Services</a>
+            <a href="#services" class="service-link">Explore Our Services</a>
             <button  class="book-call" id="book-call">Book a Call</button>
         </section>
         <section class="img-section">
@@ -43,14 +43,14 @@ improve outcomes for providers, programs, and the people they serve. </p>
             </div>
         </section>
     </div>
-    <div class="about-us">
+    <div class="about-us" id="about-us">
         <section class="img-section">
             <div class="complex-img">
                 <img src="img/company-personnel-coming-together-to-honor-a-well-2025-02-20-01-59-44-utc.jpg" />
             </div>
         </section>
         <section class="text-section">
-            <h1>About <span class="green">Us</span></h1>
+            <h1>About <span class="green">Us</span> <a href="#header" class="to-top"> &#9650;</a></h1>
             <p>Urgent Mindset, Inc. is a healthcare consulting and operations management group built to 
 support providers, agencies, and health systems through complex transitions, compliance 
 demands, and organizational growth. We serve as an extension of your team—offering 
@@ -61,8 +61,8 @@ healthcare environment that is constantly evolving.</p>
         </section>
 
     </div>
-    <div class="services">
-        <h1>Our <span class="green">Services</span></h1>
+    <div class="services" id="services">
+        <h1>Our <span class="green">Services </span><a href="#header" class="to-top"> &#9650;</a></h1>
         <p>Our core services include the following, and each is tailored to meet the specific needs of 
 healthcare providers, behavioral health organizations, and care delivery systems: 
 </p>

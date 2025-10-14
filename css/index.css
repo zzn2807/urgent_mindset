@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 /* Acumin Concept */
 @font-face {
     font-family: "Acumin Concept";
@@ -70,7 +73,15 @@
 h1{
     font-family: "Acumin Concept";
 }
-
+.to-top{
+    text-decoration: none;
+    opacity: 20%;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+.to-top:hover{
+    background-color: #a2c0a2
+}
 html,body {
     margin-bottom: 0;
 }
@@ -293,7 +304,7 @@ p {
         height: 100%;
     }
 
-    nav ul li {
+    nav ul li, nav ul a {
         color: inherit;
         padding: 0px;
         display: flex;
@@ -302,9 +313,10 @@ p {
         flex: 1;
         border-radius: 5px;
         cursor: pointer;
+        text-decoration: none;
     }
 
-    nav ul li:hover {
+    nav ul li:hover, nav ul a:hover {
         background-color: #c9e4c9
     }
 }
