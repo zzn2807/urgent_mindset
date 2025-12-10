@@ -6,56 +6,64 @@ html {
     font-family: "Acumin Concept";
     font-weight: normal;
     font-style: normal;
-    src: url("../font/Acumin_Concept/ACUMIN-RPRO.OTF") format("opentype");
+    src: url("../font/Acumin_Concept/ACUMIN-RPRO.OTF") format("opentype"),
+         url("/static/font/Acumin_Concept/ACUMIN-RPRO.OTF") format("opentype");
 }
 
 @font-face {
     font-family: "Acumin Concept";
     font-weight: normal;
     font-style: italic;
-    src: url("../font/Acumin_Concept/ACUMIN-ITPRO.OTF") format("opentype");
+    src: url("../font/Acumin_Concept/ACUMIN-ITPRO.OTF") format("opentype"),
+         url("/static/font/Acumin_Concept/ACUMIN-ITPRO.OTF") format("opentype");
 }
 
 @font-face {
     font-family: "Acumin Concept";
     font-weight: bold;
     font-style: normal;
-    src: url("../font/Acumin_Concept/ACUMIN-BDPRO.OTF") format("opentype");
+    src: url("../font/Acumin_Concept/ACUMIN-BDPRO.OTF") format("opentype"),
+         url("/static/font/Acumin_Concept/ACUMIN-BDPRO.OTF") format("opentype");
 }
 
 @font-face {
     font-family: "Acumin Concept";
     font-weight: bold;
     font-style: italic;
-    src: url("../font/Acumin_Concept/ACUMIN-BDITPRO.OTF") format("opentype");
+    src: url("../font/Acumin_Concept/ACUMIN-BDITPRO.OTF") format("opentype"),
+         url("/static/font/Acumin_Concept/ACUMIN-BDITPRO.OTF") format("opentype");
 }
 /* Poppins */
 @font-face {
     font-family: "Poppins";
     font-weight: normal;
     font-style: normal;
-    src: url("../font/Poppins/POPPINS-REGULAR.TTF") format("truetype");
+    src: url("../font/Poppins/POPPINS-REGULAR.TTF") format("truetype"),
+         url("/static/font/Poppins/POPPINS-REGULAR.TTF") format("truetype");
 }
 
 @font-face {
     font-family: "Poppins";
     font-weight: normal;
     font-style: italic;
-    src: url("../font/Poppins/POPPINS-ITALIC.TTF") format("truetype");
+    src: url("../font/Poppins/POPPINS-ITALIC.TTF") format("truetype"),
+         url("/static/font/Poppins/POPPINS-ITALIC.TTF") format("truetype");
 }
 
 @font-face {
     font-family: "Poppins";
     font-weight: bold;
     font-style: normal;
-    src: url("../font/Poppins/POPPINS-BOLD.TTF") format("truetype");
+    src: url("../font/Poppins/POPPINS-BOLD.TTF") format("truetype"),
+         url("/static/font/Poppins/POPPINS-BOLD.TTF") format("truetype");
 }
 
 @font-face {
     font-family: "Poppins";
     font-weight: bold;
     font-style: italic;
-    src: url("../font/Poppins/POPPINS-BOLDITALIC.TTF") format("truetype");
+    src: url("../font/Poppins/POPPINS-BOLDITALIC.TTF") format("truetype"),
+         url("/static/font/Poppins/POPPINS-BOLDITALIC.TTF") format("truetype");
 }
 
 *{
